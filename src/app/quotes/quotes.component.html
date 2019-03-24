@@ -1,12 +1,23 @@
-<h1>Quotes</h1>
+<h1> Quotes</h1>
 <hr>
-
-
-
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'> 
-    <li>{{quote.name}}</li>
-    <button  (click)='toogleDetails(i)'>Toogle Details</button>
-    <app-quotes-details *ngIf="quote.showDescription" [quote]='quote'></app-quotes-details>
+<div class="container">
+        <div class="row">
+            <app-quote-form></app-quote-form>
+        </div>
     </div>
-</ul>
+<div class="container">
+    <div class="row" *ngFor="let quote of quotes;let i = 'index'">
+        <div class="row">
+            <h4 id="{{i}}">{{quote.name}} </h4>
+            <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+        </div>
+        
+        <div class="row" *ngIf="quote.showDescription">
+        <app-quotes-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+    </div>
+    
+</div>
+
+</div>
+
+<p *ngIf='quotes.length > 5'>You have too many!!</p>
