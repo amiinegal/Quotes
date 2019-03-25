@@ -13,12 +13,7 @@ export class QuoteFormComponent implements OnInit {
       @Input() quote:Quote;
       @Output() isComplete= new EventEmitter<boolean>();
 
-      likeButtonClick(){
-        this.quote.likeButtonClick ++
-      }
-      dislikeButtonClick(){
-        this.quote.dislikeButtonClick --
-      }
+      
 
 
       submitQuote(){
