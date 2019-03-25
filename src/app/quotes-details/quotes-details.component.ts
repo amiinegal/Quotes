@@ -1,3 +1,4 @@
+
 import { Component, OnInit,Input,Output,EventEmitter } from '@angular/core';
 import { Quote} from '../quote'
 @Component({
@@ -14,7 +15,7 @@ likeButtonClick(){
   this.quote.likeButtonClick +1
 }
 dislikeButtonClick(){
-  this.quote.dislikeButtonClick -1
+  this.quote.dislikeButtonClick +1
 }
 
 quoteDelete(complete:boolean){
