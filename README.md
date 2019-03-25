@@ -31,7 +31,7 @@ The date the Quote is submitted.(Hidden input).
 ### Angular 
 ### Bootstrap
 #### Contact details
-You can contact me at amiinegal34[at]gmail[dot]com
+You can contact me at amiinegal34[@gmail.com
 
 # License
 ## License MIT Copyright (c) 2019 AMIN ADAN
