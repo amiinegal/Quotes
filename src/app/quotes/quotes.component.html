@@ -2,7 +2,7 @@
 <hr>
 <div class="container">
         <div class="row">
-            <app-quote-form></app-quote-form>
+            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
         </div>
     </div>
 <div class="container">
@@ -20,4 +20,4 @@
 
 </div>
 
-<p *ngIf='quotes.length > 5'>You have too many!!</p>
+<p *ngIf='quotes.length > 5'></p>
