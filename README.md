@@ -1,5 +1,5 @@
 # Quotes
-This is a simple Angular 5 application that allows you to create quotes which can be liked or disliked and allows to user to delete quotes. 25 march 2019
+This is a simple Angular App that allows you to create quotes which can be liked or disliked and allows to user to delete quotes. 25 march 2019
 ### By AMIN ADAN
 ## Description
 Quotes is a simple application meant to test understanding of Angular 5. The application allows a user to provide some inputs and as out put it displays the details of a quotes in Bootstrap 4 cards. It also uses pipes and custom directives.
