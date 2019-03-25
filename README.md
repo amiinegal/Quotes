@@ -27,10 +27,10 @@ A Quote (Entered into the text area).
 The author of the Quote.
 Name of the user uploading the Quote.
 The date the Quote is submitted.(Hidden input).
-Built Using
-Angular 5
-Bootstrap
-Contact details
+## Built Using
+### Angular 
+### Bootstrap
+#### Contact details
 You can contact me at amiinegal34[at]gmail[dot]com
 
 # License
