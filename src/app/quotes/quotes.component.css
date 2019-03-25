@@ -4,7 +4,8 @@ h1{
     background-color: #444;
     padding-top: 10%;
 }
-.container{
-    padding:6px;
-    margin: 6px;
+
+.row{
+    display: inline-block;
+    
 }

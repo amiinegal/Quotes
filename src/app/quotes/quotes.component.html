@@ -1,25 +1,70 @@
 <h1> Quotes</h1>
 <hr>
 <div class="container">
-        <div class="row">
-            <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-        </div>
-    </div>
-<div class="container">
+        
+
     <div class="row" *ngFor="let quote of quotes;let i = 'index'">
         <div class="row">
             <h4 id="{{i}}">{{quote.name}} </h4>
             <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
         </div>
-        
+        <br>
+        <br>
+        <br>
         <div class="row" *ngIf="quote.showDescription">
-        <app-quotes-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+                <button class="btn btn-success" name="like" (click)="likeButtonClick(i)">Like </button>
+                <p>{{quote.likes}}</p>
+            <button class="btn btn-warning" name="Dislike" (click)="dislikeButtonClick(i)">Dislike </button>
+            <app-quotes-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+        
+        </div>
     </div>
-    
-</div>
+    <br>
+    <br>
+    <div class="row">
+        <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
+
 
 </div>
+
+
 
 <p *ngIf='quotes.length > 5'></p>
+
+<!-- 
+
+<div class="container">
+    <h1 class="title">Quotes</h1>
+   <br>
+   <br>
+    <div *ngFor="let quote of quotes;let i = 'index'">
+      <br>
+      <br>
+
+      <div class="row">
+      <button class="btn btn-primary" (click)='toogleDetails(i)'>Details</button>
+      </div>
+      <br>
+      <div class="row" *ngIf='quote.showDescription'>
+        <button class="btn btn-primary" (click)="likeButtonClick(i)">upvote</button><br>
+        <br><br><br>
+        <p>{{quote.vote}}</p>
+        <br><br><br>
+        <div><button class="knob" (click)="dislikeButtonClick(i)">downvote</button> </div>
+        
+     
+    
+        <app-quotes-details  [quote]='quote' (isComplete)= 'deleteQuote($event,i)'></app-quotes-details>
+    </div>
+</div>
+    <br>
+    <p class="quote">Will you like to add another quote?</p>
+    <div class="row">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+   <br><br><br>
+    </div>
+    -->
+
 
 
