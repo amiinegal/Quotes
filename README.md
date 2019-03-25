@@ -1,27 +1,37 @@
 # Quotes
+This is a simple Angular 5 application that allows you to create quotes which can be liked or disliked. It also allows a user to delete quotes. 25 march 2019
+### By AMIN ADAN
+## Description
+Quotes is a simple application meant to test understanding of Angular 5. The application allows a user to provide some inputs and as out put it displays the details of a quotes in Bootstrap 4 cards. It also uses pipes and custom directives.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.6.
+This project is generated with Angular CLI version 1.7.4.
 
-## Development server
+### Setup/Installation Requirements
+For the application to run on local machine, you must have NPM and Angular installed.
+Bootstrap(4) is also required for the custom styling used and recommended especially for the cards element to work.
+When all the Requirements have been met, you can simply clone the application by running the command git clone https://github.com/amiinegal/Quotes.git on your local machine and you can run your own version by opening a terminal and navigating to the cloned folder and running ng serve -o,this will initiate and open a server that will allow you to view the application. You can also access the generated application from this link or the one provided above if you first want to see how the application works.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Known Bugs/Updates/Corrections
+The application inputs currently do not clear their input fields after data submission. WIP
+If any errors are spotted or if you have ideas for improvement you can open an issue by clicking on this link and selecting New Issue on the resulting page and I will look into it.
+You can also create a pull request with further improvements and I will add them onto the project
+Specifications
+The following are the specifications for this application:
 
-## Code scaffolding
+# INPUT
+The application accepts 4 inputs with the user being able to enter only 3 of the required inputs.
+INPUT TYPE
+The application has a html5 input validation for text, it also requires you to enter text into the text boxes before you can proceed with submitting a quote.
+The following are the required inputs:
+A Quote (Entered into the text area).
+The author of the Quote.
+Name of the user uploading the Quote.
+The date the Quote is submitted.(Hidden input).
+Built Using
+Angular 5
+Bootstrap
+Contact details
+You can contact me at amiinegal34[at]gmail[dot]com
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+# License
+## License MIT Copyright (c) 2019 AMIN ADAN
